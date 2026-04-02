@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Borriero</title>
+  <style>body{ visibility: hidden; }</style>
+  <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+ 
+  <div class="cards">
+    <div class="card br" onclick="navigate('../Portfolio-BR/portfolio-pt.html')">
+      <img src="br-flag.webp" alt="Bandeira do Brasil">
+      <div class="label">PORTUGUÊS</div>
+    </div>
+    <div class="card US" onclick="navigate('/Portfolio-EN/portfolio-en.html')">
+      <img src="us-flag.webp" alt="US Flag">
+      <div class="label">ENGLISH</div>
+    </div>
+  </div>
+ 
+  <div id="fade-overlay"></div>
+ 
+  <script>
+    function navigate(url) {
+      const overlay = document.getElementById('fade-overlay');
+      overlay.classList.add('active');
+      setTimeout(() => { window.location.href = url; }, 650);
+    }
+  </script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.body.style.visibility = 'visible';
+    }, 1000);
+  });
+</script>
+ 
+</body>
+</html>
