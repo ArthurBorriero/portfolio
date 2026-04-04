@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Borriero</title>
+  <style> body{ visibility: hidden; }</style>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-portfolio.css">
+</head>
+<body>
+ 
+  <!-- BIO -->
+  <div class="bio-wrap">
+    <div class="bio-top">
+      <div class="bio-px-border"></div>
+      <div class="bio-px-border tr"></div>
+      <div class="bio-px-border bl"></div>
+      <div class="bio-px-border br"></div>
+      <div class="bio-name">ARTHUR BORRIERO</div>
+      <div class="bio-role">&gt; FULL-STACK DEV</div>
+      <div class="bio-text">
+        I've always been introspective and fascinated by logic, which made programming a natural consequence. Today, I develop web applications while constantly exploring new technologies, sharpening my skills and deepening my knowledge with each project. :)
+      </div>
+      <button class="btn-cv">[ DOWNLOAD RESUME ]</button>
+    </div>
+ 
+    <!-- MENU LISTA -->
+    <div class="menu-list">
+      <button class="menu-btn" onclick="show('skills', this)">SKILLS</button>
+      <button class="menu-btn" onclick="show('projects', this)">PROJECTS</button>
+      <button class="menu-btn" onclick="show('contact', this)">CONTACT</button>
+    </div>
+  </div>
+ 
+  <!-- SKILLS -->
+  <div class="sec" id="skills">
+    <div class="sh">
+      <div class="sh-tag">// TECH STACK</div>
+      <div class="sh-title">SKILLS</div>
+      <div class="sh-line"></div>
+    </div>
+    <div class="sk-grid">
+      <div class="sk">
+        <div class="sk-box">
+          <img src="icons/javascript.svg" alt="JavaScript">
+        </div>
+        <div class="sk-name">JAVASCRIPT</div>
+      </div>
+      <div class="sk">
+        <div class="sk-box">
+          <img src="icons/html5.svg" alt="HTML5">
+        </div>
+        <div class="sk-name">HTML5</div>
+      </div>
+      <div class="sk">
+        <div class="sk-box">
+          <img src="icons/css3.svg" alt="CSS3">
+        </div>
+        <div class="sk-name">CSS3</div>
+      </div>
+      <div class="sk">
+        <div class="sk-box">
+          <img src="icons/git.svg" alt="Git">
+        </div>
+        <div class="sk-name">GIT</div>
+      </div>
+      <div class="sk">
+        <div class="sk-box">
+          <img src="icons/github.svg" alt="GitHub">
+        </div>
+        <div class="sk-name">GITHUB</div>
+      </div>
+      <div class="sk">
+        <div class="sk-box">
+          <img src="icons/bash.svg" alt="Bash">
+        </div>
+        <div class="sk-name">BASH</div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- PROJECTS -->
+  <div class="sec" id="projects">
+    <div class="sh">
+      <div class="sh-tag">// WORKS</div>
+      <div class="sh-title">PROJECTS</div>
+      <div class="sh-line"></div>
+    </div>
+    <div class="proj-empty">
+      <div class="proj-msg">COMING SOON...<br><br>PROJECTS BEING<br>LOADED.</div>
+    </div>
+  </div>
+ 
+  <!-- CONTACT -->
+  <div class="sec" id="contact">
+    <div class="sh">
+      <div class="sh-tag">// GET IN TOUCH</div>
+      <div class="sh-title">CONTACT</div>
+      <div class="sh-line"></div>
+    </div>
+    <div class="ct-list">
+      <a class="ct-card" href="https://github.com/ArthurBorriero" target="_blank">
+        <div class="ct-icon">
+          <img src="icons/github.svg" alt="GitHub">
+        </div>
+        <div class="ct-info">
+          <div class="ct-lbl">GITHUB</div>
+          <div class="ct-val">ArthurBorriero</div>
+        </div>
+        <div class="ct-arr">&gt;</div>
+      </a>
+      <a class="ct-card" href="https://www.linkedin.com/in/arthur-borriero-9b1385371" target="_blank">
+        <div class="ct-icon">
+          <img src="icons/linkedin.svg" alt="LinkedIn">
+        </div>
+        <div class="ct-info">
+          <div class="ct-lbl">LINKEDIN</div>
+          <div class="ct-val">arthur-borriero</div>
+        </div>
+        <div class="ct-arr">&gt;</div>
+      </a>
+      <a class="ct-card" href="mailto:arthur.borriero.silva@gmail.com">
+        <div class="ct-icon">
+          <img src="icons/email.svg" alt="Email">
+        </div>
+        <div class="ct-info">
+          <div class="ct-lbl">EMAIL</div>
+          <div class="ct-val">arthur.borriero.silva@gmail.com</div>
+        </div>
+        <div class="ct-arr">&gt;</div>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function show(id, btn) {
+      document.querySelectorAll('.sec').forEach(s => s.classList.remove('on'));
+      document.querySelectorAll('.menu-btn').forEach(b => b.classList.remove('on'));
+      document.getElementById(id).classList.add('on');
+      btn.classList.add('on');
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        document.body.style.visibility = 'visible';
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
