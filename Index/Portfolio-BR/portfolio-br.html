@@ -65,7 +65,7 @@
       </div>
       <div class="proj-drawer">
         <div class="proj-drawer-inner">
-          <div class="proj-desc">Shooter espacial top-down.<br>Inimigos, cometas e caos pixel a pixel.</div>
+          <div class="proj-desc"oo>Shmup 2D de nave com ondas de inimigos e dificuldade crescente.</div>
           <a class="proj-play" href="https://arthurborriero.github.io/Crimson_Barrage/" target="_blank">PLAY</a>
         </div>
       </div>
@@ -111,11 +111,16 @@ function show(id, btn) {
 function toggleCard(id) {
   const card = document.getElementById(id);
   const wasOpen = card.classList.contains('open');
+
   card.classList.toggle('open');
+
   if (!wasOpen) {
-    setTimeout(() => {
-      card.querySelector('.proj-drawer').scrollIntoView({ behavior: 'smooth', block: 'end' });
-    }, 50);
+    card.addEventListener('transitionend', () => {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth'
+      });
+    }, { once: true });
   }
 }
 </script>
