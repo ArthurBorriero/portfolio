@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arthur | Full-Stack Developer</title>
+
+<style> body{ visibility: hidden; }</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+<!-- CSS correto -->
+<link rel="stylesheet" href="../assets/styles/style-portfolio.css">
+</head>
+
+<body>
+
+<!-- BIO -->
+<div class="bio-wrap">
+  <div class="bio-top">
+    <div class="bio-px-border"></div>
+    <div class="bio-px-border tr"></div>
+    <div class="bio-px-border bl"></div>
+    <div class="bio-px-border br"></div>
+
+    <div class="bio-name">ARTHUR BORRIERO</div>
+    <div class="bio-role">&gt; FULL-STACK DEV</div>
+
+    <div class="bio-text">
+      Full-stack web developer focused on building web applications and continuously improving through hands-on projects and new technologies.
+      <br><br>
+      Feel free to check out my projects below. 🤓
+    </div>
+  </div>
+
+  <div class="menu-list">
+    <button class="menu-btn" onclick="show('skills', this)">SKILLS</button>
+    <button class="menu-btn" onclick="show('projects', this)">PROJECTS</button>
+    <button class="menu-btn" onclick="show('contact', this)">CONTACT</button>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="sec" id="skills">
+  <div class="sh">
+    <div class="sh-tag">// TECH STACK</div>
+    <div class="sh-title">SKILLS</div>
+    <div class="sh-line"></div>
+  </div>
+
+  <div class="sk-grid">
+    <div class="sk"><div class="sk-box"><img src="../assets/icons/javascript.svg"></div><div class="sk-name">JAVASCRIPT</div></div>
+    <div class="sk"><div class="sk-box"><img src="../assets/icons/html5.svg"></div><div class="sk-name">HTML5</div></div>
+    <div class="sk"><div class="sk-box"><img src="../assets/icons/css3.svg"></div><div class="sk-name">CSS3</div></div>
+    <div class="sk"><div class="sk-box"><img src="../assets/icons/git.svg"></div><div class="sk-name">GIT</div></div>
+    <div class="sk"><div class="sk-box"><img src="../assets/icons/github.svg"></div><div class="sk-name">GITHUB</div></div>
+    <div class="sk"><div class="sk-box"><img src="../assets/icons/bash.svg"></div><div class="sk-name">BASH</div></div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="sec" id="projects">
+  <div class="sh">
+    <div class="sh-tag">// WORKS</div>
+    <div class="sh-title">PROJECTS</div>
+    <div class="sh-line"></div>
+  </div>
+
+  <div class="proj-grid">
+    <div class="proj-card" id="card-crimson">
+      <div class="proj-face">
+        <div class="proj-title">CRIMSON BARRAGE</div>
+        <button class="proj-toggle" onclick="toggleCard('card-crimson')">
+          SEE MORE <i class="proj-toggle-arrow">▼</i>
+        </button>
+      </div>
+
+      <div class="proj-drawer">
+        <div class="proj-drawer-inner">
+          <div class="proj-desc">
+            2D spaceship shoot'em up with wave-based enemy patterns and progressive difficulty.
+          </div>
+          <a class="proj-play" href="https://arthurborriero.github.io/Crimson_Barrage/" target="_blank">PLAY</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="sec" id="contact">
+  <div class="sh">
+    <div class="sh-tag">// CONTACT</div>
+    <div class="sh-title">GET IN TOUCH</div>
+    <div class="sh-line"></div>
+  </div>
+
+  <div class="ct-list">
+    <a class="ct-card" href="https://github.com/ArthurBorriero" target="_blank">
+      <div class="ct-icon"><img src="../assets/icons/github.svg"></div>
+      <div class="ct-info"><div class="ct-lbl">GITHUB</div><div class="ct-val">ArthurBorriero</div></div>
+      <div class="ct-arr">&gt;</div>
+    </a>
+
+    <a class="ct-card" href="https://www.linkedin.com/in/arthur-borriero-9b1385371" target="_blank">
+      <div class="ct-icon"><img src="../assets/icons/linkedin.svg"></div>
+      <div class="ct-info"><div class="ct-lbl">LINKEDIN</div><div class="ct-val">arthur-borriero</div></div>
+      <div class="ct-arr">&gt;</div>
+    </a>
+
+    <a class="ct-card" href="mailto:arthur.borriero.silva@gmail.com">
+      <div class="ct-icon"><img src="../assets/icons/email.svg"></div>
+      <div class="ct-info"><div class="ct-lbl">EMAIL</div><div class="ct-val">arthur.borriero.silva@gmail.com</div></div>
+      <div class="ct-arr">&gt;</div>
+    </a>
+  </div>
+</div>
+
+<!-- JS centralizado -->
+<script src="../shared.js"></script>
+
+</body>
+</html>
